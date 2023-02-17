@@ -21,47 +21,48 @@
                 <div class="col mt-4">
                     <p class="income">Income</p>
                     <div class="mb-3 row justify-content-center">
-                        <label for="inputText" class="col-sm-2 col-form-label">Income:</label>
+                        <label class="col-sm-2 col-form-label">Income:</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputText" style="background: #DCDCDC; border-radius: 2px;">
+                            <input type="text" class="form-control" id="income-field" style="background: #DCDCDC; border-radius: 2px;">
                         </div>
                     </div>
                     <p class="expenses">Expenses</p>
                     <div class="mb-3 row justify-content-center">
-                        <label for="inputText" class="col-sm-2 col-form-label">Food:</label>
+                        <label class="col-sm-2 col-form-label">Food:</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputText" style="background: #DCDCDC; border-radius: 2px;">
+                            <input type="text" class="form-control" id="food-field" style="background: #DCDCDC; border-radius: 2px;">
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center">
-                        <label for="inputText" class="col-sm-2 col-form-label">Rent:</label>
+                        <label class="col-sm-2 col-form-label">Rent:</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputText" style="background: #DCDCDC; border-radius: 2px;">
+                            <input type="text" class="form-control" id="rent-field" style="background: #DCDCDC; border-radius: 2px;">
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center">
-                        <label for="inputText" class="col-sm-2 col-form-label">Cloths:</label>
+                        <label class="col-sm-2 col-form-label">Cloths:</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputText" style="background: #DCDCDC; border-radius: 2px;">
+                            <input type="text" class="form-control" id="cloths-field" style="background: #DCDCDC; border-radius: 2px;">
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-primary mt-3">Calculate</button>
+                        <button type="button" class="btn btn-primary mt-3" id="calculate-btn">Calculate</button>
                     </div>
-                    <p class="expenses">Total Expenses: <span>00</span></p>
-                    <p class="expenses">Balance: <span>00</span></p>
+                    <p class="expenses">Total Expenses: <span id="totalExpenses">00</span></p>
+                    <p class="expenses">Balance: <span id="totalBalance">00</span></p>
                     <div class="save mt-4">
                         <p>Save:</p>
-                        <input type="text" class="save-form">
+                        <input type="text" class="save-form text-center" id="savingField">
                         <p style="margin-right:15px;">%</p>
-                        <input type="button" class="btn btn-primary" style="width:30%;" value="Save">
+                        <input type="button" id="savingButton" class="btn btn-primary" style="width:30%;" value="Save">
                     </div>
-                    <p class="expenses">Saving Amount: <span>00</span></p>
-                    <p class="expenses">Remaining Balance: <span>00</span></p>
+                    <p class="expenses">Saving Amount: <span id="amount">00</span></p>
+                    <p class="expenses">Remaining Balance: <span id="remain">00</span></p>
                 </div>
             </div>
         </div>
     </main>
     <script src="bootstrap.min.js"></script>
+    <script src="money_calculate.js"></script>
 </body>
 </html>
